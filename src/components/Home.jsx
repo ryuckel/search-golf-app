@@ -30,7 +30,8 @@ class Home extends React.Component {
 			event.preventDefault();
 			this.setState({ loading: true });
 
-			const response = await axios.get('https://api.myjson.com/bins/p2tnu', {
+			// const response = await axios.get('https://api.myjson.com/bins/p2tnu', {
+			const response = await axios.get('https://2plhdc8de3.execute-api.ap-northeast-1.amazonaws.com/production', {
 				params: {
 					date: format(this.state.date, 'yyyyMMdd'),
 					budget: this.state.budget,
